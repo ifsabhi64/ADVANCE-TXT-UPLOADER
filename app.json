@@ -1,35 +1,40 @@
+
 {
-    "name": "𝗡𝗔𝗥𝗨𝗝𝗔𝗔𝗧 𝗨𝗦𝗘𝗥𝗕𝗢𝗧",
-    "logo": "https://telegra.ph/file/b99ed1fb1efd15e38389c.png",
-    "description": "An first Telegram Userbot with multi Clients for Spamming or Mass.",
-    "keywords": ["pyrogram", "userbot"],
-    "repository": "https://github.com/NARUJAT/NARUUSERBOT2",
-  "stack": "container",
+    "name": "anonymous",
+    "description": "anonymous",
+    "repository": "https://github.com/",
+    "keywords": [
+        "telegram bot",
+        "pyrogram"
+    ],
     "env": {
-        "STRING_SESSION1": {
-            "description": "fill with the telethon session string",
-            "required": true
+        "API_ID":{
+            "description": "Get your telegram API ID from https://my.telegram.org",
+            "value":"23612641"
         },
-        "MONGO_URL": {
-            "description": "Fill there an mongo database from mongodb.com",
-            "required": true,
-            "value": "mongodb+srv://Krishna:pss968048@cluster0.4rfuzro.mongodb.net/?retryWrites=true&w=majority"
+        "API_HASH":{
+            "description":"Get your telegram API HASH from https://my.telegram.org",
+                    "value":"f7ef90c733241bdc2977e3fcc53df5b7"
         },
-        "SUDO_USERS": {
-            "description": "don't Change this there /id",
-            "required": true,
-            "value": "5473771943 6835035553"
+        "BOT_TOKEN":{
+            "description":"Get from BotFather",
+            "value":"8084849151:AAESZMqbwSKnGHQqBUpgA-fJci_FgYRc1fM"
         },
-        "OWNER_ID": {
-            "description": "Fill there your I'd",
-            "required": true,
-            "value": "5473771943"
-        },
-        "BOT_TOKEN": {
-            "description": "fill with your bot token get from @BotFather on telegram",
-            "required": true,
-            "value": ""
+        "AUTH_USERS":{
+            "description":"Admin/Owner/Friends ID Seperate by ','  Ex: 44578878,8878899",
+             "value":"7769588492"
+
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+          "url": "heroku/python"
+          "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+         "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview"
         }
 
+
     }
+
 }
